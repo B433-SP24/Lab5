@@ -1,5 +1,6 @@
 CC=gcc
-CFLAGS=-fno-stack-protector -m32 -Wimplicit-function-declaration
+# no warnings for implicit function declaration
+CFLAGS=-fno-stack-protector -m32 -Wno-implicit-function-declaration
 
 all: buf1 buf2 buf3
 
