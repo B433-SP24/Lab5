@@ -1,11 +1,11 @@
 import subprocess
 
 # The command to run your program
-command = './buf3'
+command = './buf2'
 
-# A string that is too long for the input_number array
+# Your input data
 input_data = '123456789'
 
-# Run the command with the too-long input
+# Run the command with the input
 process = subprocess.Popen(command, stdin=subprocess.PIPE)
 process.communicate(input_data.encode())
