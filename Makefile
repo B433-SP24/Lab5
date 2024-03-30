@@ -1,5 +1,5 @@
 CC=gcc
-CFLAGS=-fno-stack-protector -m32
+CFLAGS=-fno-stack-protector -m32 -Wimplicit-function-declaration
 
 all: buf1 buf2 buf3
 
