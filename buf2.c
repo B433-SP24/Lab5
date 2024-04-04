@@ -11,12 +11,16 @@ typedef struct password {
 int main(int argc, char *argv[]) {
     password_t check_password;
     strncpy(check_password.str1, "fuzzball", 8);
+
     check_password.pass = 0;
+
     printf("Enter the password:\n");
     gets(check_password.str2);
     printf("Pass is %d\n", check_password.pass);
+
     if (strncmp(check_password.str1, check_password.str2, 8) == 0)
         check_password.pass = 1;
+    
     if (check_password.pass == 1)
         printf("Password is correct! \n");
     else
